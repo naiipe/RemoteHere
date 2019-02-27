@@ -1,2 +1,2 @@
 # RemoteHere
-A Java desktop 
+A Java desktop application to get opportunities jobs from RemoteOk
