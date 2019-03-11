@@ -12,19 +12,18 @@ public class ExportFiles {
 	public static void ExportFileJson() throws IOException {
 
 		JSONObject obj = new JSONObject();
-		obj.put("Name", "crunchify.com");
-		obj.put("Author", "App Shah");
+		obj.put("Name", "remoteOK.com");
+		obj.put("Author", "Rafael");
 
 		JSONArray company = new JSONArray();
-		company.add("Compnay: eBay");
-		company.add("Compnay: Paypal");
-		company.add("Compnay: Google");
+		company.add("Job1: job1");
+		company.add("Job2: Job2");
+		company.add("Job3: job3");
 		obj.put("Company List", company);
 
-		// try-with-resources statement based on post comment below :)
 		try (FileWriter file = new FileWriter("/Users/aluno/Documents/test.txt")) {
 			file.write(obj.toJSONString());
-			System.out.println("Successfully Copied JSON Object to File...");
+			System.out.println("Process done.");
 			System.out.println("\nJSON Object: " + obj);
 		}
 	}
